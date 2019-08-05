@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  blog:
+    build:
+      context: .
+      dockerfile: ./deploy/Dockerfile
+    ports:
+      - "8080:8080"
+    stdin_open: true
+    tty: true
+
